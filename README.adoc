@@ -1,0 +1,57 @@
+= Rnbw
+Severen Redwood <severen@shrike.me>
+
+Rnbw (a shortening of "rainbow"), is a Swift library for manipulating the colour
+of strings when displayed on a terminal that supports ANSI escape codes.
+
+Rnbw supports your typical selection of 8 colours plus the full range of 256
+colours. There is currently no support planned for 24bit/true colour, however
+feel free to send a pull request if you would like to work on adding support.
+
+=== Warning
+A lot of functionality has not been implemented yet, I'm mostly scaffolding out
+the API to a point where I am happy with it. Internally the code is quite messy
+and poorly documented (partly due to the fact that I'm a newcomer to Swift) but
+it will eventually be cleaned up.
+
+== Example
+[source,swift]
+----
+import Rnbw
+
+let string = "Hello world!"
+
+// You can either use the paint function:
+paint(string, textColor: .Red, style: .Bold)
+// or the extensions on the `String` class:
+string.setColor(.Red).setStyle(.Bold)
+----
+
+Output (I've made the escape codes visible):
+
+`"\u{001B}[31m\u{001B}[1mHello world!\u{001B}[0m"`
+
+== Installation
+I use the Swift Package Manager as my build system and method of distribution.
+I currently have no plans to support CocoaPods or Carthage because:
+
+* (a) I do not own a Apple device (no access to OS X).
+* (b) I see usage of the Swift Package Manager as the future of package
+management in the Swift ecosystem.
+
+In order to add Rnbw as a dependency your `Package.swift` should look something
+like this:
+[source,swift]
+----
+import PackageDescription
+
+let package = Package(
+    name: "MyAwesomeApp",
+    dependencies: [
+        .Package(
+            url: "https://github.com/SShrike/Rnbw",
+            versions: Version(1,0,0) ..< Version(2,0,0)),
+        ),
+    ]
+)
+----
