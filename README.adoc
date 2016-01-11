@@ -50,7 +50,7 @@ let package = Package(
     dependencies: [
         .Package(
             url: "https://github.com/SShrike/Rnbw",
-            versions: Version(1,0,0) ..< Version(2,0,0)),
+            versions: Version(0,1,0) ..< Version(1,0,0)),
         ),
     ]
 )
