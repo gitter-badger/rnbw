@@ -15,8 +15,8 @@ public enum Color {
     // case Fixed(Int8) For future 256 colour support
 }
 
-/// Represents the different types styling that can be used with ANSI escape
-/// codes.
+/// Represents the different types of styling that can be used with ANSI
+/// escape codes.
 public enum Style {
     case Reset
     case Bold
