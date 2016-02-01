@@ -1,5 +1,6 @@
 language: generic
 dist: trusty
+sudo: required
 env:
   global:
     - SWIFTENV_ROOT=$HOME/.swiftenv
