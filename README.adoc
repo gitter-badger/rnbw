@@ -1,4 +1,6 @@
 = Rnbw
+
+image:https://badges.gitter.im/SShrike/rnbw.svg[link="https://gitter.im/SShrike/rnbw?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge"]
 Severen Redwood <severen@shrike.me>
 
 image:https://travis-ci.org/SShrike/rnbw.svg?branch=master["Build Status", link="https://travis-ci.org/SShrike/rnbw"]
