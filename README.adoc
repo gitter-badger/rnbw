@@ -1,6 +1,8 @@
 = Rnbw
 Severen Redwood <severen@shrike.me>
 
+image:https://travis-ci.org/SShrike/rnbw.svg?branch=master["Build Status", link="https://travis-ci.org/SShrike/rnbw"]
+
 Rnbw (a shortening of "rainbow"), is a Swift library for manipulating the colour
 of strings when displayed on a terminal that supports ANSI escape codes.
 
